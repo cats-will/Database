@@ -2,9 +2,9 @@
 1
 */
 SELECT p.Name, pc.Name
-from Production.Product p
-join Production.ProductSubcategory b
-on p.ProductSubcategoryID = b.ProductSubcategoryID
-join Production.ProductCategory pc
-on b.ProductCategoryID = pc.ProductCategoryID
-where Color = 'Red' and ListPrice >= 100
+FROM Production.Product p
+JOIN Production.ProductSubcategory b
+ON p.ProductSubcategoryID = b.ProductSubcategoryID
+JOIN Production.ProductCategory pc
+ON b.ProductCategoryID = pc.ProductCategoryID
+WHERE Color = 'Red' AND ListPrice >= 100
