@@ -1,7 +1,7 @@
 /*
 1
 */
-select p.Name, pc.Name
+SELECT p.Name, pc.Name
 from Production.Product p
 join Production.ProductSubcategory b
 on p.ProductSubcategoryID = b.ProductSubcategoryID
